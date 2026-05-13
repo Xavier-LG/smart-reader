@@ -227,3 +227,4 @@ Smart Reader 默认将数据保存在本地：
 ## License
 
 在发布到 GitHub 之前，建议补充一个明确的开源许可证。
+"# smart-reader" 

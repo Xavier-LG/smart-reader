@@ -1,0 +1,63 @@
+{
+  "name": "smart-reader",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A local-first reading app for collecting, organizing, and revisiting articles, notes, and documents.",
+  "keywords": [
+    "reader",
+    "read-later",
+    "wechat",
+    "knowledge-base",
+    "vite",
+    "express"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "start": "tsx server.ts",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/multer": "^2.1.0",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "@vitejs/plugin-react": "^5.0.4",
+    "axios": "^1.15.2",
+    "cheerio": "^1.2.0",
+    "clsx": "^2.1.1",
+    "cors": "^2.8.6",
+    "date-fns": "^4.1.0",
+    "express": "^4.21.2",
+    "https-proxy-agent": "^9.0.0",
+    "lucide-react": "^0.546.0",
+    "mark.js": "^8.11.1",
+    "morgan": "^1.10.1",
+    "motion": "^12.23.24",
+    "multer": "^2.1.1",
+    "nanoid": "^5.1.9",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^10.1.0",
+    "react-syntax-highlighter": "^16.1.1",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^3.5.0",
+    "tsx": "^4.21.0",
+    "turndown": "^7.2.4",
+    "turndown-plugin-gfm": "^1.0.2",
+    "vite": "^6.2.0",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/mark.js": "^8.11.12",
+    "@types/node": "^22.14.0",
+    "@types/turndown": "^5.0.6",
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^4.1.14",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}

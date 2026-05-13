@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Reader</title>
+    <style>
+      body { margin: 0; background-color: #f9fafb; font-family: system-ui, -apple-system, sans-serif; }
+      @media (prefers-color-scheme: dark) { body { background-color: #0a0a0b; } }
+      #root-loader {
+        display: flex; height: 100vh; width: 100vw; overflow: hidden;
+      }
+      .g-skel-sidebar { width: 256px; border-right: 1px solid #f3f4f6; background: #fff; padding: 24px; animation: g-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+      .g-skel-main { flex: 1; display: flex; flex-direction: column; background: #f9fafb; animation: g-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+      .g-skel-header { height: 64px; border-bottom: 1px solid #f3f4f6; background: #fff; padding: 0 40px; display: flex; align-items: center; }
+      .g-skel-content { padding: 40px; }
+      .g-bar { background: #e5e7eb; border-radius: 4px; }
+      
+      @media (prefers-color-scheme: dark) {
+        .g-skel-sidebar { background: #0f0f12; border-color: rgba(255,255,255,0.05); }
+        .g-skel-main { background: #0a0a0b; }
+        .g-skel-header { background: #0f0f12; border-color: rgba(255,255,255,0.05); }
+        .g-bar { background: #1f2937; }
+      }
+      
+      @keyframes g-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+      @media (max-width: 768px) { .g-skel-sidebar { display: none; } }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="root-loader">
+        <div class="g-skel-sidebar">
+        <div class="g-bar" style="height: 32px; width: 120px; margin-bottom: 32px;"></div>
+        <div class="g-bar" style="height: 16px; width: 80px; margin-bottom: 16px;"></div>
+        <div class="g-bar" style="height: 20px; width: 100%; margin-bottom: 16px;"></div>
+        <div class="g-bar" style="height: 20px; width: 100%; margin-bottom: 16px;"></div>
+        <div class="g-bar" style="height: 20px; width: 100%; margin-bottom: 16px;"></div>
+      </div>
+      <div class="g-skel-main">
+        <div class="g-skel-header">
+           <div class="g-bar" style="height: 40px; width: 100%; max-width: 500px; border-radius: 16px;"></div>
+        </div>
+        <div class="g-skel-content">
+           <div class="g-bar" style="height: 32px; width: 200px; margin-bottom: 32px; border-radius: 8px;"></div>
+           <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
+              <div class="g-bar" style="height: 192px; border-radius: 24px;"></div>
+              <div class="g-bar" style="height: 192px; border-radius: 24px;"></div>
+              <div class="g-bar" style="height: 192px; border-radius: 24px;"></div>
+              <div class="g-bar" style="height: 192px; border-radius: 24px;"></div>
+           </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
