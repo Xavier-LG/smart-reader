@@ -224,7 +224,3 @@ Smart Reader 默认将数据保存在本地：
 - 搜索和阅读体验优化
 - 部署和打包流程完善
 
-## License
-
-在发布到 GitHub 之前，建议补充一个明确的开源许可证。
-"# smart-reader" 
